@@ -12,6 +12,14 @@ const App = () => {
   const lines=[
     "Left curve market particpants are highly unlikely outperform the S&P500. Infact they can barely maintain a longterm profitable PnL",
     "Proud lobotomy survivor and activist",
+    "$dogswifhat would be a good additional to my 401k",
+    "My parents think I'm a really good trader",
+    "I don't know a single person irl who owns crypto",
+    "veH0rny is likely a fed",
+    "I bought the pico top of $BONK gonna wait to rotate out next cycle",
+    "I used to have Richard Hearts notifications on",
+    "I clicked a phishing link on my grandma's laptop and she got her Mekaverse NFT drained",
+    "This is the use-case"
     
   ]
 
@@ -53,7 +61,7 @@ const App = () => {
       </div>
 
       <div style={{ textAlign: 'center' }}>
-        <p style={{ fontSize: pSize, width: '50%', margin: 'auto' }}>this shitcoin has cool edgy ticker. its not gud investment. bcus its fuckin $RETARDed. built for left curve market participants. this is not a good coin. its a great coin. that is why it will pump. it was always meant to, since before the inception of Solana itself. embrace retardation. nothing else matters. or makes sense.</p>
+        <p style={{ fontSize: pSize, width: '50%', margin: 'auto' }}>this shitcoin has cool edgy ticker. its not gud investment. bcus its fuckin $RETARDed. built for left curve market participants. this is not a good coin. its a great coin. that is why it will pump. it was always meant to, since before the inception of Solana itself. embrace retardation. nothing else matters. or makes sense. born out of LonleyAnonCapital</p>
         <button
           style={{ fontSize: "22px", backgroundColor: 'lightblue', color: 'white', padding: '10px 20px', borderRadius: '20px', border: 'none', margin: '10px', cursor: 'pointer', fontFamily: 'Comic Sans MS' }}
           onMouseOver={(e) => e.target.style.backgroundColor = 'skyblue'}
@@ -87,7 +95,9 @@ const App = () => {
           onMouseOver={(e) => e.target.style.transform = 'scale(0.97) rotate(3deg)'}
           onMouseOut={(e) => e.target.style.transform = 'scale(1) rotate(0)'}
         />
-                <p style={{ width: '50%', margin: 'auto' }}>click me</p>
+                <p style={{ width: '50%', margin: 'auto' }}>click me for alpha</p>
+                <p style={{ width: '50%', margin: 'auto' }}>(over and over again)</p>
+
         {showChat && (
           <div style={chatStyle}>
             {randomLine}
