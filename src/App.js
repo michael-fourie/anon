@@ -35,6 +35,13 @@ const App = () => {
       console.error('Error fetching data:', error);
     }
   };
+  const [buttonDisabled, setButtonDisabled] = useState(false);
+
+  const disableButton = (e) => {
+    e.preventDefault();
+    e.target.innerText = "Coming soon";
+    setButtonDisabled(true);
+  };
 
   const handleImageClick = () => {
     setShowChat(!showChat);
@@ -61,23 +68,32 @@ const App = () => {
       </div>
 
       <div style={{ textAlign: 'center' }}>
-        <p style={{ fontSize: pSize, width: '50%', margin: 'auto' }}>this shitcoin has cool edgy ticker. its not gud investment. bcus its fuckin $RETARDed. built for left curve market participants. this is not a good coin. its a great coin. that is why it will pump. it was always meant to, since before the inception of Solana itself. embrace retardation. nothing else matters. or makes sense. born out of LonleyAnonCapital</p>
+        <p style={{ fontSize: pSize, width: '50%', margin: 'auto' }}>this shitcoin has cool edgy ticker. its not good investment. bcus its fuckin $RETARDed. built for left curve market participants. this is not a good coin. its a great coin. that is why it will pump. it was always meant to, since before the inception of Solana itself. embrace retardation. nothing else matters. or makes sense. born out of LonleyAnonCapital</p>
         <button
-          style={{ fontSize: "22px", backgroundColor: 'lightblue', color: 'white', padding: '10px 20px', borderRadius: '20px', border: 'none', margin: '10px', cursor: 'pointer', fontFamily: 'Comic Sans MS' }}
-          onMouseOver={(e) => e.target.style.backgroundColor = 'skyblue'}
-          onMouseOut={(e) => e.target.style.backgroundColor = 'lightblue'}
-          onClick={() => window.location.href = 'https://www.dextools.io/app/en/solana/pair-explorer/By1JyfYNStqtxMFM7h3rYt9pc9jKZpc1beVdhbKjR4nm'}
-        >
-          Buy $RETARD
-        </button>
-        <button
-          style={{ fontSize: "22px", backgroundColor: 'lightblue', color: 'white', padding: '10px 20px', borderRadius: '20px', border: 'none', margin: '10px', cursor: 'pointer', fontFamily: 'Comic Sans MS' }}
-          onMouseOver={(e) => e.target.style.backgroundColor = 'skyblue'}
-          onMouseOut={(e) => e.target.style.backgroundColor = 'lightblue'}
-          onClick={() => window.location.href = 'https://www.dextools.io/app/en/solana/pair-explorer/By1JyfYNStqtxMFM7h3rYt9pc9jKZpc1beVdhbKjR4nm'}
-        >
-          Dextools
-        </button>
+        style={{ fontSize: "22px", backgroundColor: 'lightblue', color: 'white', padding: '10px 20px', borderRadius: '20px', border: 'none', margin: '10px', cursor: 'pointer', fontFamily: 'Comic Sans MS' }}
+        onMouseOver={(e) => e.target.style.backgroundColor = 'skyblue'}
+        onMouseOut={(e) => e.target.style.backgroundColor = 'lightblue'}
+        onClick={!buttonDisabled ? (e) => {
+          disableButton(e);
+          // window.location.href = 'https://www.dextools.io/app/en/solana/pair-explorer/By1JyfYNStqtxMFM7h3rYt9pc9jKZpc1beVdhbKjR4nm';
+        } : null}
+        disabled={buttonDisabled}
+      >
+        {buttonDisabled ? "Coming soon" : "Buy $RETARD"}
+      </button>
+
+      <button
+        style={{ fontSize: "22px", backgroundColor: 'lightblue', color: 'white', padding: '10px 20px', borderRadius: '20px', border: 'none', margin: '10px', cursor: 'pointer', fontFamily: 'Comic Sans MS' }}
+        onMouseOver={(e) => e.target.style.backgroundColor = 'skyblue'}
+        onMouseOut={(e) => e.target.style.backgroundColor = 'lightblue'}
+        onClick={!buttonDisabled ? (e) => {
+          disableButton(e);
+          // window.location.href = 'https://www.dextools.io/app/en/solana/pair-explorer/By1JyfYNStqtxMFM7h3rYt9pc9jKZpc1beVdhbKjR4nm';
+        } : null}
+        disabled={buttonDisabled}
+      >
+        {buttonDisabled ? "Coming soon" : "Dextools"}
+      </button>
 
         <img
           src={left}
