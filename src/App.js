@@ -62,13 +62,11 @@ const App = () => {
         <a href="https://t.me/your_telegram_link" target="_blank" rel="noopener noreferrer">
           <img src={telegramIcon} alt="Telegram" style={{ width: '30px', height: '30px', marginRight: '10px', cursor: 'pointer' }} />
         </a>
-        <a href="https://twitter.com/your_twitter_link" target="_blank" rel="noopener noreferrer">
-          <img src={twitterIcon} alt="Twitter" style={{ width: '30px', height: '30px', cursor: 'pointer' }} />
-        </a>
+
       </div>
 
       <div style={{ textAlign: 'center' }}>
-        <p style={{ fontSize: pSize, width: '50%', margin: 'auto' }}>this shitcoin has cool edgy ticker. its not good investment. bcus its fuckin $RETARDed. built for left curve market participants. this is not a good coin. its a great coin. that is why it will pump. it was always meant to, since before the inception of Solana itself. embrace retardation. nothing else matters. or makes sense. born out of LonleyAnonCapital</p>
+        <p style={{ fontSize: pSize, width: '50%', margin: 'auto' }}>a shitcoin with a cool edgy ticker. its not good investment. bcus its fuckin $RETARDed. built for left curve market participants. this is not a good coin. its a great coin. that is why it will pump. it was always meant to, since before the inception of Solana itself. embrace retardation. nothing else matters. or makes sense.</p>
         <button
         style={{ fontSize: "22px", backgroundColor: 'lightblue', color: 'white', padding: '10px 20px', borderRadius: '20px', border: 'none', margin: '10px', cursor: 'pointer', fontFamily: 'Comic Sans MS' }}
         onMouseOver={(e) => e.target.style.backgroundColor = 'skyblue'}
