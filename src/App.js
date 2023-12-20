@@ -73,10 +73,7 @@ const App = () => {
         style={{ fontSize: "22px", backgroundColor: 'lightblue', color: 'white', padding: '10px 20px', borderRadius: '20px', border: 'none', margin: '10px', cursor: 'pointer', fontFamily: 'Comic Sans MS' }}
         onMouseOver={(e) => e.target.style.backgroundColor = 'skyblue'}
         onMouseOut={(e) => e.target.style.backgroundColor = 'lightblue'}
-        onClick={!buttonDisabled ? (e) => {
-          disableButton(e);
-          // window.location.href = 'https://www.dextools.io/app/en/solana/pair-explorer/By1JyfYNStqtxMFM7h3rYt9pc9jKZpc1beVdhbKjR4nm';
-        } : null}
+        onClick={window.location.href = 'https://raydium.io/swap/?inputCurrency=sol&outputCurrency=73pRiEwXtrGdntsGbYagysrKgH6NwWjQBLyaoJZSdVH9'}
         disabled={buttonDisabled}
       >
         {buttonDisabled ? "Coming soon" : "Buy $RETARD"}
