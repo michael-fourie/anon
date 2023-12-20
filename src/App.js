@@ -59,10 +59,12 @@ const App = () => {
       </div>
 
       <div style={{ display: 'flex', gap: '2em', position: 'absolute', top: '20px', right: '50px' }}>
-        <a href="https://t.me/your_telegram_link" target="_blank" rel="noopener noreferrer">
+        <a href="https://t.me/+OsESYEwWMbw3YjNh" target="_blank" rel="noopener noreferrer">
           <img src={telegramIcon} alt="Telegram" style={{ width: '30px', height: '30px', marginRight: '10px', cursor: 'pointer' }} />
         </a>
-
+        <a href="https://twitter.com/cyberetard" target="_blank" rel="noopener noreferrer">
+          <img src={twitterIcon} alt="Twitter" style={{ width: '30px', height: '30px', cursor: 'pointer' }} />
+        </a>
       </div>
 
       <div style={{ textAlign: 'center' }}>
