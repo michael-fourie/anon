@@ -49,6 +49,13 @@ const App = () => {
       getRandomLine();
     }
   };
+  const redirectToURL = () => {
+    window.location.href = 'https://raydium.io/swap/?inputCurrency=sol&outputCurrency=73pRiEwXtrGdntsGbYagysrKgH6NwWjQBLyaoJZSdVH9';
+  };
+  const redirectToURL2 = () => {
+    window.location.href = 'https://dexscreener.com/solana/fu3sknnadh3y3xnn6abryx1lhtvr43sj2swtzq9gumk';
+  };
+
   let pSize = isMobile ? '14px' : '22px'
   let picSize = isMobile ? "75%" : "45%"
   let chatStyle = isMobile ? { width: "45%", position: 'absolute', right: '10%', top: '80%', transform: 'translateY(-50%)', backgroundColor: 'lightgray', padding: '10px', borderRadius: '10px', fontFamily: 'Comic Sans MS', fontSize: '16px' } : { width: "20%", position: 'absolute', right: '10%', top: '50%', transform: 'translateY(-50%)', backgroundColor: 'lightgray', padding: '10px', borderRadius: '10px', fontFamily: 'Comic Sans MS', fontSize: '26px' }
@@ -73,7 +80,7 @@ const App = () => {
         style={{ fontSize: "22px", backgroundColor: 'lightblue', color: 'white', padding: '10px 20px', borderRadius: '20px', border: 'none', margin: '10px', cursor: 'pointer', fontFamily: 'Comic Sans MS' }}
         onMouseOver={(e) => e.target.style.backgroundColor = 'skyblue'}
         onMouseOut={(e) => e.target.style.backgroundColor = 'lightblue'}
-        onClick={window.location.href = 'https://raydium.io/swap/?inputCurrency=sol&outputCurrency=73pRiEwXtrGdntsGbYagysrKgH6NwWjQBLyaoJZSdVH9'}
+        onClick={() => redirectToURL()}
         disabled={buttonDisabled}
       >
         {buttonDisabled ? "Coming soon" : "Buy $RETARD"}
@@ -83,7 +90,7 @@ const App = () => {
         style={{ fontSize: "22px", backgroundColor: 'lightblue', color: 'white', padding: '10px 20px', borderRadius: '20px', border: 'none', margin: '10px', cursor: 'pointer', fontFamily: 'Comic Sans MS' }}
         onMouseOver={(e) => e.target.style.backgroundColor = 'skyblue'}
         onMouseOut={(e) => e.target.style.backgroundColor = 'lightblue'}
-        onClick={window.location.href = 'https://dexscreener.com/solana/fu3sknnadh3y3xnn6abryx1lhtvr43sj2swtzq9gumk'}
+        onClick={() => redirectToURL2()}
         disabled={buttonDisabled}
       >
         {buttonDisabled ? "Coming soon" : "Dextools"}
