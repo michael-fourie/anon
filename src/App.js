@@ -120,7 +120,7 @@ const App = () => {
       </div>
 
       <div style={{ display: 'flex', gap: '2em', position: 'absolute', top: '20px', right: '50px', zIndex: 10 }}>
-        <img src={telegramIcon} alt="Telegram" style={{ width: '30px', height: '30px', cursor: 'pointer' }} onClick={() => redirectToURL("https://t.me/+KCkDA3bdOiE5OTQx")} />
+        <img src={telegramIcon} alt="Telegram" style={{ width: '60px', height: '60px', cursor: 'pointer' }} onClick={() => redirectToURL("https://t.me/+KCkDA3bdOiE5OTQx")} />
       </div>
 
       
