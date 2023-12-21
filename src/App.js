@@ -121,6 +121,8 @@ const App = () => {
 
       <div style={{ display: 'flex', gap: '2em', position: 'absolute', top: '20px', right: '50px', zIndex: 10 }}>
         <img src={telegramIcon} alt="Telegram" style={{ width: '60px', height: '60px', cursor: 'pointer' }} onClick={() => redirectToURL("https://t.me/+KCkDA3bdOiE5OTQx")} />
+        <img src={twitterIcon} alt="Twitter" style={{ width: '60px', height: '60px', cursor: 'pointer' }} onClick={() => redirectToURL("https://x.com/funeemonkeygif/status/1737958835774492930?s=46&t=1H71grEd6D-Uzzp7glKUyA")} />
+
       </div>
 
       
