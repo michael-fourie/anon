@@ -4,6 +4,7 @@ import left from "./assets/output_image.png";
 import bgGif from './assets/monkey-cute.gif';
 import telegramIcon from "./assets/telegram.png";
 import twitterIcon from "./assets/twitter.png";
+import { isMobile } from 'react-device-detect';
 import song from './assets/song.mp3';
 
 const App = () => {
@@ -56,10 +57,12 @@ const App = () => {
     playAudio();
   };
 
+  const size = isMobile ? '24px' : '72px'
+
   const textStyle = {
     fontWeight: 'bold',
     cursor: 'pointer',
-    fontSize: '72px',
+    fontSize: size,
     transition: 'color 0.3s ease-in-out',
   };
 
